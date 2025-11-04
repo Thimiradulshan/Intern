@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-btn {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+

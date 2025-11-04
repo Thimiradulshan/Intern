@@ -1,0 +1,29 @@
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Club & Society Management</title>
+  <link rel="stylesheet" href="dashbord.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Club & Society Dashboard</h1>
+
+    <div class="nav">
+      <a href="add_member.php"> Add Member</a>
+      <a href="search_member.php"> Search Member</a>
+      <a href="update_member.php"> Update Member</a>
+      <a href="delete_member.php"> Delete Member</a>
+      <a href="logout.php" class="logout-btn"> Logout</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login using PHP - Krishan Ranaweera</title>
+    <!--external stylesheet-->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h3>Admin Login</h3>
+        </div>
+
+        <form action="./loginProcess.php" method="post" autocomplete="off">
+            <!--email-->
+            <div class="field">
+                <input type="email" name="email" title="email" id="email">
+                <label for="email">Email:</label>
+            </div>
+            <!--password-->
+            <div class="field">
+                <input type="password" name="password" title="password">
+                <label>Password: </label>
+            </div>
+
+            <div class="content">s
+                <div class="checkbox">
+                    <input type="checkbox" id="rem-me" title="remember me">
+                    <label for="rem-me">Remember me</label>
+                </div>
+
+                <div class="pass-link">
+                    <a href="#">Forget password</a>
+                </div>
+            </div>
+
+            <div class="field">
+                <input type="submit" value="Login" name="login">
+            </div>
+
+            
+        </form>
+    </div>
+</body>
+</html>
